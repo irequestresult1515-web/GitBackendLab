@@ -19,6 +19,8 @@ namespace GitBackendLab
             var total = orderService.Calculate(order);
 
             Console.WriteLine($"Order #{order.Id} ,Final Total = {total}");
+
+            Console.WriteLine("Any thing");
         }
     }
 }
