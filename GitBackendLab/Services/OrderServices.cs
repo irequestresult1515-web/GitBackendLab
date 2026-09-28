@@ -11,7 +11,7 @@ namespace GitBackendLab.Services
     {
         public decimal Calculate(Order order)
         {
-            return order.total * 0.85m;
+            return order.total * 0.7m;
         }
     }
 }
