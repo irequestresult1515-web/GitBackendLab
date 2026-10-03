@@ -18,6 +18,11 @@ namespace GitBackendLab.Services
         {
             return order.Total >= 500m;
         }
+
+        public void MakeItDone(Order order)
+        {
+            order.Status = "Done";
+        }
     }
 
 }
