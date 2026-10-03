@@ -14,7 +14,10 @@ namespace GitBackendLab.Services
             return order.Total * 0.7m;
         }
 
-
+        public bool IsHighValueOrder(Order order)
+        {
+            return order.Total >= 500m;
+        }
     }
 
 }
