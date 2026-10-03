@@ -1,4 +1,4 @@
-﻿using GitBackendLab.Modles;
+﻿using GitBackendLab.Models;
 using GitBackendLab.Services;
 using System.Numerics;
 
@@ -11,7 +11,7 @@ namespace GitBackendLab
             var order = new Order
             {
                 Id = 1,
-                total = 19
+                Total = 19
             };
 
             var orderService = new OrderServices();

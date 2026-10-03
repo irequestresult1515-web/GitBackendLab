@@ -1,4 +1,4 @@
-﻿using GitBackendLab.Modles;
+﻿using GitBackendLab.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,11 @@ namespace GitBackendLab.Services
     {
         public decimal Calculate(Order order)
         {
-            return order.total * 0.7m;
+            return order.Total * 0.7m;
+        }
+        public void MarkAsCompleted(Order order)
+        {
+            order.Status = "Completed";
         }
     }
 }
